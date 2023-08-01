@@ -68,7 +68,7 @@ class ExampleApp(App):
                                     )
                     except bleak.exc.BleakError as e:
                         self.line(f"  error {e}")
-                        asyncio.sleep(10)
+                        await asyncio.sleep(10)
             except bleak.exc.BleakError as e:
                 self.line(f"ERROR {e}")
                 await asyncio.sleep(1)
