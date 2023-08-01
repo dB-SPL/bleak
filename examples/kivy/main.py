@@ -1,7 +1,7 @@
 import asyncio
 import bleak
 
-from kivy.app import App
+from kivy.app import App, platform
 
 # from kivy.core.window import Window
 from kivy.uix.label import Label
@@ -12,6 +12,10 @@ from kivy.logger import Logger
 import logging
 
 logging.Logger.manager.root = Logger
+
+if platform == "android":
+    from android.permissions import request_permissions, Permission
+    request_permissions([Permission.BLUETOOTH_ADMIN, Permission.ACCESS_FINE_LOCATION, Permission.ACCESS_COARSE_LOCATION, Permission.ACCESS_BACKGROUND_LOCATION, Permission.BLUETOOTH_SCAN, Permission.BLUETOOTH_CONNECT])
 
 
 class ExampleApp(App):
