@@ -157,6 +157,7 @@ android.accept_sdk_license = True
 # (list) List of Java files to add to the android project (can be java or a
 # directory containing the files)
 #android.add_src =
+android.add_src = ../../bleak/backends/p4android/java/com/github/hbldh/bleak
 
 # (list) Android AAR archives to add
 #android.add_aars =
@@ -254,7 +255,7 @@ p4a.branch = develop
 
 # (str) The directory in which python-for-android should look for your own build recipes (if any)
 #p4a.local_recipes = recipes
-p4a.local_recipes = ../../bleak/backends/p4android/recipes
+#p4a.local_recipes = ../../bleak/backends/p4android/recipes
 
 # (str) Filename to the hook for p4a
 #p4a.hook =
