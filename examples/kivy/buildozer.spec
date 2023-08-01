@@ -273,6 +273,8 @@ p4a.branch = develop
 # setup.py if you're using Poetry, but you need to add "toml" to source.include_exts.
 #p4a.setup_py = false
 
+p4a.extra_args = --blacklist-requirements=sqlite3,android,libffi,openssl
+
 
 #
 # iOS specific
