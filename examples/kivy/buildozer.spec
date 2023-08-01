@@ -96,7 +96,7 @@ android.permissions = BLUETOOTH,BLUETOOTH_ADMIN,ACCESS_FINE_LOCATION,ACCESS_COAR
 #android.features = android.hardware.usb.host
 
 # (int) Target Android API, should be as high as possible.
-#android.api = 27
+android.api = 33
 
 # (int) Minimum API your APK will support.
 #android.minapi = 21
